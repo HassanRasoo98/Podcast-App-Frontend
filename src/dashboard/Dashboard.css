@@ -1,0 +1,46 @@
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+  }
+  
+  .dashboard {
+    display: flex;
+  }
+  
+  .content {
+    flex-grow: 1;
+    padding: 20px;
+  }
+  
+  .footer {
+    width: calc(100% - 250px);
+    margin-left: 250px;
+  }
+  
+  .dashboard {
+    position: relative;
+  }
+  
+  .profile-toggle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background-color: #007bff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .profile-toggle img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .profile-toggle:hover {
+    background-color: #0056b3;
+  }

@@ -1,0 +1,79 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+.now-playing {
+  display: flex;
+  align-items: center;
+}
+
+.podcast-cover {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.podcast-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.playback-controls {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.control-button {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.2em;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.progress-bar {
+  margin: 0 10px;
+  flex-grow: 1;
+}
+
+.time-info {
+  margin-left: 10px;
+}
+
+.volume-icon {
+  margin-left: 10px;
+}
+
+@media (max-width: 600px) {
+  .footer {
+    flex-direction: column;
+  }
+
+  .now-playing, .playback-controls {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .playback-controls {
+    margin-top: 10px;
+  }
+
+  .progress-bar {
+    flex-grow: 0;
+    width: 100%;
+  }
+}
