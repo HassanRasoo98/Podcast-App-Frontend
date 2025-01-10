@@ -30,7 +30,7 @@ const Sidebar = () => {
         <ul className="menu-items">
           <li>
             <Link to="/dashboard">
-              <FontAwesomeIcon icon={faHeadphones} className="item-icon" />
+              <FontAwesomeIcon icon={faHeadphones} className="hover:text-[#2564ed] item-icon" />
               Discover
             </Link>
           </li>

@@ -52,8 +52,27 @@
 
 .item-icon {
   margin-right: 10px;
+
+
+}
+.menu-items li a {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  text-decoration: none;
+  color: inherit;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 100px; /* Rounded corners */
 }
 
+.menu-items li a:hover {
+  background-color: #2564ed; /* Blue hover background */
+  color: white; /* White text on hover */
+}
+
+.item-icon {
+  margin-right: 10px;
+}
 .icon {
   margin-left: 10px;
 }
@@ -68,6 +87,14 @@
   display: flex;
   align-items: center;
   cursor: pointer;
+  padding: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 100px; /* Rounded corners */
+}
+
+.toggle:hover {
+  background-color: #2564ed; /* Blue hover background */
+  color: white; /* White text on hover */
 }
 
 .toggle svg {

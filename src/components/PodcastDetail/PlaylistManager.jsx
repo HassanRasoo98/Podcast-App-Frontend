@@ -59,7 +59,7 @@ const PlaylistManager = ({ podcast_id }) => {
         },
         body: JSON.stringify({
           name: newPlaylistName,
-          podcasts: [podcast.id],
+          podcasts: [podcast_id],
         }),
       });
 
