@@ -2,13 +2,15 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #000;
+  background-color: #8f64d3;
+  opacity: 90%;
   color: #fff;
   padding: 10px 20px;
   box-sizing: border-box;
   width: 100%;
   position: fixed;
   bottom: 0;
+  height: 10%;
   left: 0;
 }
 

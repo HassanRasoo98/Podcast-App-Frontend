@@ -1,5 +1,6 @@
 import { React, useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import './homepage.css';
 
 const ListenerDashboard = () => {
   // State declarations
@@ -92,8 +93,8 @@ const ListenerDashboard = () => {
   };
 
   return (
-    <div className="container py-4">
-      <h1 className="mb-4">Welcome Back!</h1>
+    <div className="dashboard-container container py-4">
+      <h1 className="dashboard-header mb-4">Welcome Back!</h1>
   
       <div className="row g-4">
         {/* Recently Played Section */}

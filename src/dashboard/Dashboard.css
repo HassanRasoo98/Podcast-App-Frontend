@@ -20,6 +20,30 @@ body.dark-mode {
   .dashboard {
     position: relative;
   }
+  .add_content {
+    position: absolute;
+    top: 10px;
+    right: 90px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background-color: #007bff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  }
+  
+  .add_content:hover {
+    background-color: #0056b3;
+    transform: scale(1.2);
+  }
+  
+  .add_content:active {
+    transform: scale(1.4);
+  }
   
   .profile-toggle {
     position: absolute;
@@ -43,4 +67,7 @@ body.dark-mode {
   
   .profile-toggle:hover {
     background-color: #0056b3;
+  }
+  .content{
+    background: linear-gradient(120deg, #9bdfbd 0%, #b6eefc 100%);
   }
