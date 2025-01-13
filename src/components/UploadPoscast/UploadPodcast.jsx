@@ -6,6 +6,9 @@ const UploadPodcast = () => {
     name: "",
     date: "",
     description: "",
+    artist: "",
+    genre: "",
+    tags: "",
     file: null,
   });
 
@@ -26,14 +29,16 @@ const UploadPodcast = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle podcast upload logic here
     console.log("Podcast uploaded:", podcast);
 
-    // Optionally, you can use FormData for file handling
+    // Form data for file upload (Optional)
     // const formData = new FormData();
     // formData.append("name", podcast.name);
     // formData.append("date", podcast.date);
     // formData.append("description", podcast.description);
+    // formData.append("artist", podcast.artist);
+    // formData.append("genre", podcast.genre);
+    // formData.append("tags", podcast.tags);
     // formData.append("file", podcast.file);
   };
 
@@ -52,6 +57,7 @@ const UploadPodcast = () => {
             required
           />
         </div>
+
         <div className="form-group">
           <label htmlFor="date">Date:</label>
           <input
@@ -63,6 +69,7 @@ const UploadPodcast = () => {
             required
           />
         </div>
+
         <div className="form-group">
           <label htmlFor="description">Description:</label>
           <textarea
@@ -74,6 +81,43 @@ const UploadPodcast = () => {
             required
           />
         </div>
+
+        <div className="form-group">
+          <label htmlFor="artist">Artist:</label>
+          <input
+            type="text"
+            id="artist"
+            name="artist"
+            value={podcast.artist}
+            onChange={handleChange}
+            required
+          />
+        </div>
+
+        <div className="form-group">
+          <label htmlFor="genre">Genre:</label>
+          <input
+            type="text"
+            id="genre"
+            name="genre"
+            value={podcast.genre}
+            onChange={handleChange}
+            required
+          />
+        </div>
+
+        <div className="form-group">
+          <label htmlFor="tags">Tags:</label>
+          <input
+            type="text"
+            id="tags"
+            name="tags"
+            value={podcast.tags}
+            onChange={handleChange}
+            placeholder="e.g.,sad, rock, love"
+          />
+        </div>
+
         <div className="form-group">
           <label htmlFor="file">Upload File:</label>
           <input
@@ -85,6 +129,7 @@ const UploadPodcast = () => {
             required
           />
         </div>
+
         <button type="submit">Upload Podcast</button>
       </form>
     </div>

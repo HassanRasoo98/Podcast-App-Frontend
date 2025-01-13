@@ -5,6 +5,7 @@ import ListenerDashboard from "../components/homepage/homepage";
 import ProfileSection from "../components/profile/ProfileSection";
 import UploadPodcast from "../components/UploadPoscast/UploadPodcast"; // Import the UploadPodcast component
 import "./Dashboard.css";
+import addIcon from "../Assets/add.png"
 
 const Dashboard = () => {
   const [activeComponent, setActiveComponent] = useState("dashboard");
@@ -26,7 +27,7 @@ const Dashboard = () => {
           <img src="/path/to/profile-icon.png" alt="Profile" />
         </button>
         <button className="add_content" onClick={showUploadPodcast}>
-          <img src="/path/to/add-icon.png" alt="Add Content" />
+          <img src={addIcon} alt="Add Content" />
         </button>
 
         {activeComponent === "profile" && <ProfileSection />}
